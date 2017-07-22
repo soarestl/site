@@ -27,58 +27,136 @@ header {
 nav {
 	background-color: #fff;
 	margin-top: 10px;
-	width: 1200px;
-	height: 50px; 
+	width: 1190px;
+	height: 50px;
+ }
+
+ul {
+	list-style-type: none;
+	width: 1190px;
+}
+
+ul li {
+	background-color: #ccc;
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+}
+
+ul li:hover {
+	background-color: #999;
+}
+
+ul li ul li {
+	text-align: left;
+	font-size: 25px;
+	float: none;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+ul li ul {
+	display: none;
+}
+
+ul li:hover ul {
+	display: block;
+	position: absolute;
+
 }
 
 section {
 	background-color: #fff;
 	margin-top: 10px;
 	width: 900px;
-	height: 500px;
 	float: left;
 	border: 2px solid #333;
 	border-radius: 10px;
 	box-shadow: 5px 5px 3px black;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+article#im {
+	background-image: url(../imagens/claquete.jpg);
+	background-position: 0% 0%;
+	
+	margin-left: 298px;	
+	width: 284px;
+	height: 284px;
+	transition: .9s;
 }
 
 h1 {
 	margin-top: 10px;
-	margin-left: 13px;
 	font: 40px fonte1;
 }
 
 p {
 	font-family: 'Bellefair', serif;
 	font-size: 25px;
-	margin-left: 15px;
+	margin-left: 3px;
+}
+
+p#acao {
+	font-family: 'Bellefair', serif;
+	font-size: 25px;
+	text-align: center;
 }
 
 h2 {
-	margin-left: 13px;
 	font: 40px fonte1;
 }
 
 aside {
 	background-color: #fff;
-	width: 286px;
+	width: 245px;
 	margin-top: 10px;
-	height: 500px;
 	float: left;
 	margin-left: 10px;
-	margin-bottom: 10px;
 }
 
 footer {
 	background-color: #fff;
-	width: 1200px;
-	height: 60px;
+	width: 1180px;
+	height: 160px;
 	clear: both;
+	padding: 10px;
 }
 
+.rede {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 20px;
+	transition: all 0.4s ease-out;
+	border-radius: 50%;
+	float: right;
+}
 
+.rede:hover {
+	cursor: pointer;
+	transform: translateY(-8px);
+	box-shadow: 4px 30px 16px 0px rgba(50,50,50,0.45);
+}
 
+.rede#facebook {
+	background-color: #2372A3;
+}
 
+.rede#twitter {
+	background-color: #0084B4;
+}
+
+.icone {
+	margin: 0px auto;
+	padding: 35px;
+	width: 80px;
+}
 
 
 
